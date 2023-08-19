@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,94 @@
     <!-- daisyUi linkup & tailwindcss-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- work sans font -->
+    <style>
+        .font {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-
+<body class="font">
+    <header class="mb-40">
+        <div class="hero min-h-screen bg-[#F9F6E2] ">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-20 ">
+                <img src="./images/Summer 1.png" class="max-w-lg md:max-w-md rounded-lg text-[#111] " />
+                <div class="text-center  md:leading-[6] lg:leading-[8] ">
+                    <p class="font-medium text-2xl md:mb-5 lg:mb-5">---SALE FEVER---</p>
+                    <h1 class="text-4xl font-bold text-[#111]">Purchase TK 200 or <br> above & get <span
+                            class="text-[#E527B2]">20% off</span></h1>
+                    <span class="py-6 text-[#111] font-medium text-x">Use Promo Code</span>
+                    <button class="btn btn-secondary  font-semibold px-6 text-xl">SELL200</button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main class="container mx-auto ">
+        <h2>Kitchenware</h2>
+        <div class="flex flex-col lg:flex-row">
+            <!-- card container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- first card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10 bg-[#1111110d] p-3">
+                        <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>39.00 TK</p>
 
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10 bg-[#1111110d] p-3">
+                        <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>39.00 TK</p>
+
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10 bg-[#1111110d] p-3">
+                        <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>39.00 TK</p>
+
+                    </div>
+                </div>
+                <!-- fourth card -->
+                
+                
+            </div>
+
+            <div class="w[400px] ml-4">
+
+                <div class="form-control bg-slate-100 p-4 rounded-lg mb-10">
+                    <label class="label">
+                        <span class="label-text">Have coupon?</span>
+                    </label>
+                    <label class="input-group">
+                        <input type="text" placeholder="Coupon code" class="input input-bordered" />
+                        <button class="btn btn-active btn-secondary border-none">Apply</button>
+                    </label>
+                </div>
+                <div class="form-control bg-slate-100 p-4 rounded-lg">
+                    <label class="label">
+                        <span class="label-text">Have coupon?</span>
+                    </label>
+                    <div></div>
+                    <button class="btn btn-secondary">Make Purchase</button>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <script src="./scripts/script.js"></script>
