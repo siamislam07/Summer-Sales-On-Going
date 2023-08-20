@@ -1,7 +1,5 @@
 
-
 let total = 0;
-
 
 function handleClickBtn(target) {
     const addToCartContainer = document.getElementById('addToCart');
@@ -39,20 +37,4 @@ function handleClickBtn(target) {
     })
 
 
-
-
 }
-
-
-
-
-// document.getElementById('coupon-input').addEventListener('click', function (event) {
-//     const text = event.target.value;
-//     const applybtn = document.getElementById('btn-coupon');
-//     const value = text.value
-//     if (value != 'SELL200') {
-//         applybtn.setAttribute('disabled')
-//     } else {
-//         applybtn.removeAttribute('disabled')
-//     }
-// })
