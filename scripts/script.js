@@ -1,13 +1,3 @@
-document.getElementById('coupon-input').addEventListener('keyup', function (event) {
-    const text = event.target.value;
-    const applybtn = document.getElementById('btn-coupon');
-    const value = text.value
-    if (value === 'SELL200') {
-        
-    } else {
-        applybtn.removeAttribute('disabled')
-    }
-})
 
 
 let total = 0;
@@ -30,13 +20,13 @@ function handleClickBtn(target) {
 
     if (intotal >= 0) {
         purchaseBtn.removeAttribute('disabled')
-        
-    }else {
+
+    } else {
         purchaseBtn.setAttribute('disabled', true)
     }
     if (intotal >= 200) {
         applybtn.removeAttribute('disabled')
-    }else {
+    } else {
         applybtn.setAttribute('disabled', true)
     }
 
@@ -54,3 +44,15 @@ function handleClickBtn(target) {
 }
 
 
+
+
+// document.getElementById('coupon-input').addEventListener('click', function (event) {
+//     const text = event.target.value;
+//     const applybtn = document.getElementById('btn-coupon');
+//     const value = text.value
+//     if (value != 'SELL200') {
+//         applybtn.setAttribute('disabled')
+//     } else {
+//         applybtn.removeAttribute('disabled')
+//     }
+// })
